@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    tools:context=".Fragments.PostDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_1"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                card_view:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/details_post_image"
+                    app:layout_constraintDimensionRatio="1:1"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/save"
+                    android:src="@drawable/ic_baseline_favorite_border_24"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="name"
+                android:id="@+id/details_name"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:text="address"
+                android:id="@+id/details_address"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:text="number"
+                android:id="@+id/details_number"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:text="male"
+                android:id="@+id/details_gender"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:text="seatno"
+                android:id="@+id/details_seatno"
+                android:layout_marginLeft="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:text="price"
+                android:id="@+id/details_price"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:text="description"
+                android:id="@+id/details_description"
+                android:layout_marginLeft="8dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layout_1"
+            android:padding="8dp"
+            android:id="@+id/layout_2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Address on Google Map"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:id="@+id/map_id"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call to item Author"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:id="@+id/call_author_id"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:id="@+id/book_id"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

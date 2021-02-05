@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_male"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="Male"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_female"
+        android:enabled="true"
+        android:icon="@drawable/ic_female"
+        android:title="Female"
+        app:showAsAction="ifRoom" />
+
+     <item
+        android:id="@+id/nav_fav"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+
+
+
+
+</menu>

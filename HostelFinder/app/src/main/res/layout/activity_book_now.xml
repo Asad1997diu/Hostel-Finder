@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookNowActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Fullname"
+        android:layout_marginTop="15dp"
+        android:id="@+id/name_id"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Occupation"
+        android:layout_marginTop="15dp"
+        android:id="@+id/occupation_id"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Institute Name"
+        android:layout_marginTop="15dp"
+        android:id="@+id/institute_id"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="District"
+        android:layout_marginTop="15dp"
+        android:id="@+id/district_id"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Phone Number"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/phone_no_id"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Normal  or Economy or AC"
+        android:layout_marginTop="15dp"
+        android:id="@+id/type_id"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="No of Bed"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/bed_no_id"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Duration"
+        android:layout_marginTop="15dp"
+        android:id="@+id/duration_id"
+        android:padding="10dp"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:textStyle="bold"
+        android:id="@+id/book_id"
+        android:layout_marginTop="15dp"
+        android:textColor="#FAFAF9"
+        android:background="@drawable/button_background"/>
+</LinearLayout>
+
+</ScrollView>
